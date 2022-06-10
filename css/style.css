@@ -1,0 +1,154 @@
+/*  --------------------------------------------------
+                MUCHISX'S CSS RESET
+--------------------------------------------------- */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 6.25%;
+}
+
+body {
+    font-size: 16rem;
+    background: var(--shade-1);
+    color: var(--shade-5);
+    font-family: "Inter";
+}
+
+/*  --------------------------------------------------
+                MAIN CSS BELOW
+--------------------------------------------------- */
+
+/*=============================================
+-->                  ROOT                  <--
+=============================================*/
+
+
+:root {
+
+    /* Color Palette */
+    --shade-1: #ECECE2;
+    --shade-2: #DADEDF;
+    --shade-3: #556672;
+    --shade-4: #756C63;
+    --shade-5: #423930;
+
+}
+
+/*=============================================
+-->                  MAIN                  <--
+=============================================*/
+
+.main-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 100vh;
+
+    padding: 40px;
+}
+
+
+    /*
+    -->               QUOTE CARDS             <--
+    =============================================
+    */
+
+    .facts-cards-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+        .fact-card-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            max-width: 80vw;
+        }
+
+            .fact-card__random-fact {
+                
+                font-family: "Tiro Gurmukhi";
+                font-size: clamp(24rem, 4vw, 60rem);
+                font-style: italic;
+                
+                margin-bottom: 120px;
+
+
+                /* Phrase Break behavior */
+                /* Option 1 */
+                text-align: center;
+
+                /* Option 2  */
+                /* text-align: justify; */
+                /* word-wrap: break-word; */
+                /* overflow-wrap: break-word; */
+                /* -webkit-hyphens: auto; */
+                /* -moz-hyphens: auto; */
+                /* hyphens: auto; */
+            }
+
+            .fact-card__randomize-button {
+                all: unset;
+                
+                width: max-content;
+                padding: 8px 12px;
+                margin-bottom: 44px;
+
+                font-weight: 700;
+                font-size: 18rem;
+                color: var(--shade-1);
+
+                background-color: var(--shade-4);
+                border-radius: 8px;
+
+                box-shadow: 2px 2px 0px 1px var(--shade-5);
+
+                cursor: pointer;
+
+                transition: background-color 0.25s ease;
+            }
+
+            .fact-card__randomize-button:hover {
+
+                background-color: var(--shade-3);
+            }
+
+
+            .crafted-by {
+                opacity: 0.6;
+                width: max-content;
+
+                cursor: default;
+                font-size: 12rem;
+                color: var(--shade-4);
+
+                transition: opacity 200ms ease;
+            }
+
+                .muchisx {
+                    position: relative;
+                    text-decoration: none;
+                    font-weight: 400;
+
+                    /* Gradient Effect */
+                    background: linear-gradient(135deg, var(--shade-3) 30%, var(--shade-5) 80%);
+                    background-clip: text;
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    border-width: 0 0 1px 0;
+                    border-style: solid;
+                    border-image: linear-gradient(135deg, var(--shade-3) 30%, var(--shade-5) 80%) 1;
+                }
+
+            .crafted-by:hover {
+                opacity: 1;
+            }
