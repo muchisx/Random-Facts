@@ -24,8 +24,8 @@ const OPTIONS = [
 
 const fetchPhrase = async (API_URL) => {
 
-    let res = await fetch(`${API_URL}${OPTIONS[0]}${OPTIONS[1]}${OPTIONS[2]}`);
-    let data = await res.json();
+    const res = await fetch(`${API_URL}${OPTIONS[0]}${OPTIONS[1]}${OPTIONS[2]}`);
+    const data = await res.json();
 
     console.log(data, '    <- data');
     return data
