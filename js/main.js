@@ -1,19 +1,3 @@
-// ---------------- QUOKKA --------------------------------
-
-({
-    "plugins": ["jsdom-quokka-plugin"],
-    "jsdom": {
-        "file": "./1. Escuela Desarrollo Web/32-API-REST/project/index.html",
-    },
-    "env": {
-        "params": {
-            "runner": "--experimental-fetch"
-        }
-    }
-})
-
-// ---------------- QUOKKA --------------------------------
-
 const API_URL = 'https://uselessfacts.jsph.pl/'
 const OPTIONS = [
     "random",
